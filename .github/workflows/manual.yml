@@ -49,4 +49,4 @@ jobs:
          
       - name: Build Binary
         shell: powershell
-        run: MSBuild.exe VisualPinball.net2019.vcxproj
+        run: MSBuild.exe code/trunk/VisualPinball.net2019.vcxproj

@@ -45,7 +45,7 @@ jobs:
         
       - name: dir
         shell: powershell
-        run: dir C:\
+        run: dir "C:\program files (x86)"
          
       - name: Build Binary
         shell: cmd

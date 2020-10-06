@@ -37,7 +37,11 @@ jobs:
         shell: powershell
         run: Install-Module 7Zip4PowerShell -Force -Verbose
         
-      - uses: actions/checkout@v2
+#      - uses: actions/checkout@v2
+      
+      - name: clone svn
+        shell: powershell
+        run: svn checkout http://svn.code.sf.net/p/vpinball/code/
       
       - name: Build Binary
         shell: cmd

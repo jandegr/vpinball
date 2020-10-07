@@ -53,7 +53,7 @@ jobs:
         
       - name: install dx sdk
         shell: cmd
-        run: call dxsdk.exe /silent  
+        run: call dxsdk.exe
                
       - name: Build Binary
         shell: cmd

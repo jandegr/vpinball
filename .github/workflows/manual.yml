@@ -61,7 +61,7 @@ jobs:
                 
       - name: dir
         shell: powershell
-        run: dir "C:\program files (x86)"
+        run: dir "C:\program files (x86)\Microsoft DirectX SDK"
                  
       - name: Build Binary
         shell: cmd

@@ -53,7 +53,7 @@ jobs:
         
       - name: install dx sdk
         shell: powershell
-        run: ./dxsdk.exe
+        run: ./dxsdk.exe /P "C:\Program Files (x86)\Microsoft DirectX SDK" /U
         
       - name: dir
         shell: powershell
@@ -61,7 +61,7 @@ jobs:
                 
       - name: dir
         shell: powershell
-        run: dir "C:\"
+        run: dir "C:\program files (x86)"
                  
       - name: Build Binary
         shell: cmd

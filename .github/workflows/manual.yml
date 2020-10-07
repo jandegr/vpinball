@@ -57,7 +57,7 @@ jobs:
         
       - name: dir
         shell: powershell
-        run: dir "C:\program files (x86)"        
+        run: dir "C:\program files (x86)\Microsoft SDKs"        
          
       - name: Build Binary
         shell: cmd

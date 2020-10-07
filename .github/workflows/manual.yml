@@ -52,8 +52,8 @@ jobs:
         run: curl.exe -o dxsdk.exe https://download.microsoft.com/download/A/E/7/AE743F1F-632B-4809-87A9-AA1BB3458E31/DXSDK_Jun10.exe
         
       - name: install dx sdk
-        shell: cmd
-        run: call dxsdk.exe
+        shell: powershell
+        run: dxsdk.exe
                
       - name: Build Binary
         shell: cmd

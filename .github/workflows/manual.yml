@@ -50,7 +50,11 @@ jobs:
       - name: download dx sdk
         shell: powershell
         run: curl.exe -o dxsdk.exe https://download.microsoft.com/download/A/E/7/AE743F1F-632B-4809-87A9-AA1BB3458E31/DXSDK_Jun10.exe
-           
+        
+      - name: install dx sdk
+        shell: cmd
+        run: call dxsdk.exe /silent  
+               
       - name: Build Binary
         shell: cmd
         run: call "%programfiles(x86)%\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe" code/trunk/VisualPinball.net2017.vcxproj

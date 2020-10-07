@@ -54,7 +54,7 @@ jobs:
       - name: install dx sdk
         shell: powershell
         run: |
-          ./dxsdk.exe /P "C:\Program Files (x86)\Microsoft DirectX SDK /S /U";
+          ./dxsdk.exe /P "C:\Program Files (x86)\Microsoft DirectX SDK" /S /U;
           echo "::add-path::C:\Program Files (x86)\Microsoft DirectX SDK"
         
       - name: dir
